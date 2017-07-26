@@ -18,7 +18,7 @@ public class Main {
     @RequestMapping("/test")
     public ModelAndView test(){
         ModelAndView mav = new ModelAndView();
-        mav.setViewName("test");
+        mav.setViewName("index2");
         return mav;
     }
 
