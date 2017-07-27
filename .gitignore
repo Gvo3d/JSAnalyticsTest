@@ -7,3 +7,4 @@
 /src/main/webapp/WEB-INF/views/frontend/
 !/src/main/webapp/WEB-INF/views/node_modules/
 /.gradle/
+!/src/main/webapp/WEB-INF/views/index.html

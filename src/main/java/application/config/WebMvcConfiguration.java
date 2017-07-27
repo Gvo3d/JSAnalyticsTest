@@ -31,8 +31,8 @@ public class WebMvcConfiguration extends WebMvcConfigurerAdapter {
 
     @Override
     public void addResourceHandlers(ResourceHandlerRegistry registry) {
-        registry.addResourceHandler("/webapp/piwik/**").addResourceLocations("/piwik/");
-        registry.addResourceHandler("/webapp/logger/**").addResourceLocations("/webapp/logger/");
+        registry.addResourceHandler("/webapp/WEB-INF/views/morgan/**").addResourceLocations("/morgan/");
+        registry.addResourceHandler("/morgan/**").addResourceLocations("/morgan/");
     }
 
     @Bean
