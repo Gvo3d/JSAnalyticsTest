@@ -1,3 +1,5 @@
 *.log
 pid.txt
 node_modules
+!/node_modules/.bin/express
+!/node_modules/

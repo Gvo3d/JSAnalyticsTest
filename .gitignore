@@ -1,0 +1,9 @@
+
+/.idea/
+/build/
+/temp/
+/out/
+!/src/
+/src/main/webapp/WEB-INF/views/frontend/
+!/src/main/webapp/WEB-INF/views/node_modules/
+/.gradle/

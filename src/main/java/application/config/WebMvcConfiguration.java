@@ -1,13 +1,12 @@
 package application.config;
 
+import application.support.HttpSender;
+import application.support.StatisticsHandlerInterceptor;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.ComponentScan;
 import org.springframework.context.annotation.Configuration;
 import org.springframework.web.servlet.ViewResolver;
-import org.springframework.web.servlet.config.annotation.DefaultServletHandlerConfigurer;
-import org.springframework.web.servlet.config.annotation.EnableWebMvc;
-import org.springframework.web.servlet.config.annotation.ResourceHandlerRegistry;
-import org.springframework.web.servlet.config.annotation.WebMvcConfigurerAdapter;
+import org.springframework.web.servlet.config.annotation.*;
 import org.springframework.web.servlet.view.InternalResourceViewResolver;
 
 
@@ -36,4 +35,19 @@ public class WebMvcConfiguration extends WebMvcConfigurerAdapter {
         registry.addResourceHandler("/webapp/logger/**").addResourceLocations("/webapp/logger/");
     }
 
+    @Bean
+    StatisticsHandlerInterceptor statisticsHandlerInterceptor(){
+        return new StatisticsHandlerInterceptor();
+    }
+
+    @Bean
+    HttpSender httpSender(){
+        return new HttpSender();
+    }
+
+    @Override
+    public void addInterceptors(InterceptorRegistry registry) {
+        registry.addInterceptor(statisticsHandlerInterceptor());
+        super.addInterceptors(registry);
+    }
 }

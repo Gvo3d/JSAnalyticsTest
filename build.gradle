@@ -20,11 +20,12 @@ buildscript{
     dependencies{
         classpath("org.springframework.boot:spring-boot-gradle-plugin:1.5.4.RELEASE")
         classpath("org.webjars:webjars-locator:0.32-1")
+        classpath("org.projectlombok:lombok:1.16.18")
     }
 }
 
 dependencies {
-    // https://mvnrepository.com/artifact/org.webjars/webjars-locator
+    compile group: 'org.projectlombok', name: 'lombok', version: '1.16.18'
     compile group: 'org.webjars', name: 'webjars-locator', version: '0.32-1'
     compile 'org.webjars:angularjs:1.3.14'
     compile group: 'org.springframework.boot', name: 'spring-boot-gradle-plugin', version: '1.5.4.RELEASE'
