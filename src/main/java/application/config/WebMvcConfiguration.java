@@ -32,7 +32,7 @@ public class WebMvcConfiguration extends WebMvcConfigurerAdapter {
     @Override
     public void addResourceHandlers(ResourceHandlerRegistry registry) {
         registry.addResourceHandler("/webapp/WEB-INF/views/morgan/**").addResourceLocations("/morgan/");
-        registry.addResourceHandler("/morgan/**").addResourceLocations("/morgan/");
+        registry.addResourceHandler("/logger/**").addResourceLocations("/logger/");
     }
 
     @Bean
