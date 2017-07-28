@@ -23,6 +23,17 @@ https://github.com/splunk/splunk-javascript-logging
 SPLUNK SLF4J:
 https://mvnrepository.com/artifact/com.splunk.logging/splunk-library-javalogging/1.5.2
 
+npm -g install hapi --save
+npm install --save good
+npm install --save good-console
+npm install --save good-squeeze
+npm install good-apache-log
+
+https://github.com/jhs/good-apache-log
+load git
+extract to project
+
+
 
 Дарова, Димас.
 Что мне нужно.

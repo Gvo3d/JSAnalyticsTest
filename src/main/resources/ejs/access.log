@@ -1,0 +1,5 @@
+::ffff:127.0.0.1 - - [27/Jul/2017:21:39:47 +0000] "GET / HTTP/1.1" 304 - "http://localhost:3000/test" "Mozilla/5.0 (Windows NT 6.1; WOW64; rv:54.0) Gecko/20100101 Firefox/54.0"
+::ffff:127.0.0.1 - - [27/Jul/2017:21:39:49 +0000] "GET /test HTTP/1.1" 304 - "http://localhost:3000/" "Mozilla/5.0 (Windows NT 6.1; WOW64; rv:54.0) Gecko/20100101 Firefox/54.0"
+::ffff:127.0.0.1 - - [27/Jul/2017:21:39:50 +0000] "GET / HTTP/1.1" 304 - "http://localhost:3000/test" "Mozilla/5.0 (Windows NT 6.1; WOW64; rv:54.0) Gecko/20100101 Firefox/54.0"
+::ffff:127.0.0.1 - - [27/Jul/2017:21:39:51 +0000] "GET /test HTTP/1.1" 304 - "http://localhost:3000/" "Mozilla/5.0 (Windows NT 6.1; WOW64; rv:54.0) Gecko/20100101 Firefox/54.0"
+::ffff:127.0.0.1 - - [27/Jul/2017:21:39:53 +0000] "GET / HTTP/1.1" 304 - "http://localhost:3000/test" "Mozilla/5.0 (Windows NT 6.1; WOW64; rv:54.0) Gecko/20100101 Firefox/54.0"

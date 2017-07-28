@@ -1,0 +1,59 @@
+
+app.get('/', function (req, res) {
+  res.send('Hello World!<a href="/test">PZDC</a>');
+});
+
+app.get('/test', function (req, res) {
+  res.send('Hello World - test!<a href="/">PZDC</a>');
+});
+
+
+app.all('*', function (req, res, next) {
+  console.log('METHOD ...'+string)
+  next() // pass control to the next handler
+});
+
+
+  dumper.on("data", function (chunk) {
+    chunks.push(chunk);
+
+  });
+
+  // Send the buffer or you can put it into a var
+  dumper.on("end", function () {
+    string = Buffer.concat(chunks);
+    console.log('RESULT: ' + chunks);
+  });
+  
+  
+  
+  var stringv='data.json';
+
+var temp = fs.createWriteStream(stringv);
+var temp2 = fs.createReadStream(stringv);
+
+var data = '';
+
+temp2.on('data', function(chunk) {
+console.log('ondata');
+  data += chunk;
+});
+
+temp2.on('end', function() {
+  console.log('onend');
+});
+  
+  
+  // Configure the request
+var options = {
+    url: urlToSend,
+    method: 'POST',
+    headers: headers,
+    data: data
+}
+
+// Start the request
+var req = http.request(options, callback);
+//This is the data we are posting, it needs to be a string or a buffer
+req.write("hello world!");
+req.end();
